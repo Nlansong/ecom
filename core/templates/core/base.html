@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> {% block title %}  {% endblock %}| Best Buy </title>
+</head>
+<body>
+    {% include 'core/header.html' %}
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% include 'core/footer.html' %}
+</body>
+</html>
